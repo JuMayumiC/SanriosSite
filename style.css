@@ -9,8 +9,7 @@ body{
 }
 
 .minha-equipe {
-    display: grid;
-    justify-content: space-around;
+    width: 33.33%;
     float: left;
 }
 .equipe-sanrio{
