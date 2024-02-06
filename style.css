@@ -11,6 +11,7 @@ body{
 .minha-equipe {
     display: grid;
     justify-content: space-around;
+    float: left;
 }
 .equipe-sanrio{
     width: 70%;
