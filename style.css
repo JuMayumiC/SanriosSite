@@ -1,17 +1,34 @@
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: rgba(247, 41, 120, 0.411);
     margin: 8px;
 }
 
-.minha-equipe {
-    width: 33.33%;
-    float: left;
+header {
+    padding: 10px;
+    text-align: left; /* Alinhamento do texto no centro */
 }
-.equipe-sanrio{
-    width: 70%;
+
+.minha-equipe {
+    float: left;
+    margin: 10px; /* Adicione alguma margem entre as equipes */
+}
+
+.hellokitty,
+.kuromi {
+    width: 45%; /* Certifique-se de que as imagens ocupem 100% da largura do contêiner */
+    height: auto; /* Para manter a proporção original da imagem */
+}
+.keroppi {
+    width: 35%; /* Certifique-se de que as imagens ocupem 100% da largura do contêiner */
+    height: auto; /* Para manter a proporção original da imagem */
+}
+.minha-equipe-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
