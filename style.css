@@ -3,14 +3,30 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'HelloKitty';
+    src: url(Boldins.ttf);
+}
+
 body {
     background-color: rgba(247, 41, 120, 0.411);
     margin: 8px;
 }
-
+h1 {
+    font-family: 'HelloKitty';
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    font-size: 60px;
+}
 header {
     padding: 10px;
     text-align: left; /* Alinhamento do texto no centro */
+}
+h2 {
+    font-family: 'HelloKitty';
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    font-size: 30px;
 }
 
 .minha-equipe {
