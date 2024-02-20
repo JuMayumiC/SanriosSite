@@ -5,7 +5,7 @@
   
 :root {
     --font-family: 'HelloKitty';
-    --primary-color: rgba(247, 41, 120, 0.411);
+    --cor-de-fundo: rgba(247, 41, 120, 0.411);
     --text-color: #fff;
     --text-shadow-color: #000;
     --header-padding: 10px;
@@ -19,7 +19,7 @@
 
   
   body {
-    background-color: var(--primary-color);
+    background-color: var(--cor-de-fundo);
     margin: 8px;
   }
   
