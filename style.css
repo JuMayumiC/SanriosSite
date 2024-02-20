@@ -1,50 +1,63 @@
-* {
+:root {
+    --font-family: 'HelloKitty';
+    --primary-color: rgba(247, 41, 120, 0.411);
+    --text-color: #fff;
+    --text-shadow-color: #000;
+    --header-padding: 10px;
+  }
+  
+  * {
     padding: 0;
     box-sizing: border-box;
-}
-
-@font-face {
-    font-family: 'HelloKitty';
+  }
+  
+  @font-face {
+    font-family: var(--font-family);
     src: url(Boldins.ttf);
-}
-
-body {
-    background-color: rgba(247, 41, 120, 0.411);
+  }
+  
+  body {
+    background-color: var(--primary-color);
     margin: 8px;
-}
-h1 {
-    font-family: 'HelloKitty';
-    color: #fff;
-    text-shadow: 2px 2px 4px #000;
+  }
+  
+  h1, h2 {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    text-shadow: 2px 2px 4px var(--text-shadow-color);
+  }
+  
+  h1 {
     font-size: 60px;
-}
-header {
-    padding: 10px;
-    text-align: left; /* Alinhamento do texto no centro */
-}
-h2 {
-    font-family: 'HelloKitty';
-    color: #fff;
-    text-shadow: 2px 2px 4px #000;
+  }
+  
+  h2 {
     font-size: 30px;
-}
-
-.minha-equipe {
+  }
+  
+  header {
+    padding: var(--header-padding);
+    text-align: left;
+  }
+  
+  .minha-equipe {
     float: left;
-    margin: 10px; /* Adicione alguma margem entre as equipes */
-}
-
-.hellokitty,
-.kuromi {
-    width: 45%; /* Certifique-se de que as imagens ocupem 100% da largura do contêiner */
-    height: auto; /* Para manter a proporção original da imagem */
-}
-.keroppi {
-    width: 35%; /* Certifique-se de que as imagens ocupem 100% da largura do contêiner */
-    height: auto; /* Para manter a proporção original da imagem */
-}
-.minha-equipe-container {
+    margin: 10px;
+  }
+  
+  .hellokitty, .kuromi {
+    width: 45%;
+    height: auto;
+  }
+  
+  .keroppi {
+    width: 35%;
+    height: auto;
+  }
+  
+  .minha-equipe-container {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
-}
+  }
+  
