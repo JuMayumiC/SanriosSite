@@ -46,17 +46,29 @@
   }
   
   .minha-equipe {
+    flex: 1;
     float: left;
+    width: 22%;
     margin: 10px;
   }
   
-  .hellokitty, .kuromi {
-    width: 45%;
+  .hellokitty   {
+        width: 45%;
+        height: auto;
+    }
+
+   .kuromi {
+    width: 50%;
     height: auto;
   }
   
   .keroppi {
-    width: 35%;
+    width: 57%;
+    height: auto;
+  }
+
+  .chococat {
+    width: 60%;
     height: auto;
   }
   
@@ -64,6 +76,7 @@
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+    flex-wrap: wrap;
   }
 
   .botao {
@@ -78,7 +91,7 @@
     width: 100%;
     border: 2px solid var(--botao-ativo);
     border-bottom: 4px solid var(--botao-ativo);
-    border-radius: 10px; /* Adicionei um arredondamento aos cantos */
+    border-radius: 10px; 
 }
 
 .botao:first-child {
@@ -87,7 +100,7 @@
 
 .botoes {
     display: flex;
-    gap: 10px; /* Adicionei um espaçamento entre os botões */
+    gap: 10px; 
 }
 
 .botao:hover {
@@ -99,5 +112,5 @@
   
   .ativo{
     background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
+    border-bottom: 4px solid var(--lilás);
 }
