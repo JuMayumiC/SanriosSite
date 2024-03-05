@@ -137,6 +137,8 @@
 
 .contador{
   font-size: 20px;
+  font-family: var(--font-family);
+  color: var(--text-color);
   text-align: center;
 }
 
