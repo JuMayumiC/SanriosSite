@@ -27,7 +27,7 @@
     margin: 8px;
   }
   
-  h1, h2 {
+  h1, h2, h3, h4 {
     font-family: var(--font-family);
     color: var(--text-color);
     text-shadow: 2px 2px 4px var(--text-shadow-color);
