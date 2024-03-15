@@ -31,6 +31,7 @@
     font-family: var(--font-family);
     color: var(--text-color);
     text-shadow: 2px 2px 4px var(--text-shadow-color);
+    text-align: center;
   }
   
   h1 {
