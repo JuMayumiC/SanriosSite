@@ -51,3 +51,51 @@ function comecaCronometro(){
 }
 
 comecaCronometro();
+
+
+let nomeUsuario = "";
+let anterior = document.querySelector('#texto');
+let joguinhoButton = document.getElementById("joguinhoButton");
+
+joguinhoButton.addEventListener("click", function() {
+    while (nomeUsuario == ""){
+        nomeUsuario = prompt('Qual é o seu nome??');
+    }
+
+    if (nomeUsuario == null){
+        anterior.textContent = '';
+    } else {
+        anterior.textContent = nomeUsuario;
+    }
+});
+
+// Código do jogo de adivinhação
+let numeroSecreto;
+let chute = '';
+
+function iniciarJogo() {
+    numeroSecreto = Math.floor(Math.random() * 10);
+    console.log(numeroSecreto);
+    
+    while (chute == '') {
+        chute = prompt('Escolha um número de 0 a 10');
+    }
+    
+    if (parseInt(chute) === numeroSecreto) {
+        alert('Parabéns! Você é incrível.');
+        console.log('Parabéns, acertou!');
+    } else {
+        alert('Errou, que pena.');
+        console.log('Infelizmente, errou!');
+    }
+}
+
+// Adicionando evento de clique para iniciar o jogo quando o botão for clicado
+document.getElementById("iniciarJogoButton").addEventListener("click", iniciarJogo);
+
+// Reiniciar o jogo de adivinhação
+function reiniciarJogo() {
+    numeroSecreto = null;
+    chute = '';
+} 
+

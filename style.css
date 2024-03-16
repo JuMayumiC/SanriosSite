@@ -143,6 +143,35 @@
   text-align: center;
 }
 
+.joguinho{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.botaojg {
+  font-family: var(--font-family), sans-serif;
+  background-color: var(--botao-ativo);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  font-size: 18px;
+  align-items: center;
+  width: 100%;
+  border: 2px solid var(--botao-ativo);
+  border-bottom: 4px solid var(--botao-ativo);
+  border-radius: 10px; 
+}
+
+.botaojg:hover {
+  cursor: pointer;
+  background-color: var(--botao-inativo);
+  transition: background-color 0.3s ease;
+}
+
 @media screen and (min-width: 768px) {
   .botoes {
       display: flex;
