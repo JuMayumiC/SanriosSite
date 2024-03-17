@@ -112,10 +112,7 @@
 }
 
   
-  .ativo{
-    background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--lilás);
-}
+
 
 .abas-textos{
   background-color: var(--texto-fundo);
